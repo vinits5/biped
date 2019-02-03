@@ -16,7 +16,7 @@ It contains all the SolidWork parts for Biped Robot along with its Assembly.
 </p>
 
 ### Simulink Simulation
-![](https://github.com/vinits5/biped/blob/master/videos/simulink_simulation.mp4)
+![](https://github.com/vinits5/biped/blob/master/videos/gifs/simulink_simulation.gif)
 
 ## Robot
 
@@ -24,4 +24,4 @@ It contains all the SolidWork parts for Biped Robot along with its Assembly.
 	<img src="https://github.com/vinits5/biped/blob/master/robot/img1.jpg">
 </p>
 
-![](https://github.com/vinits5/biped/blob/master/videos/walk_demo.mp4)
+![](https://github.com/vinits5/biped/blob/master/videos/gifs/walk_demo.gif)
