@@ -1,4 +1,4 @@
-# biped project
+# Biped Project
 
 ## Biped Assembly
 
@@ -10,4 +10,18 @@ It contains all the SolidWork parts for Biped Robot along with its Assembly.
 	<img src="https://github.com/vinits5/biped/blob/master/biped_assembly/top_view.jpg" width="350" height="175" title="Top View">
 </p>
 
+### Rendered Assembly
+<p align="center">
+	<img src="https://github.com/vinits5/biped/blob/master/rendering/biped.jpg" title="Rendered Biped">
+</p>
 
+### Simulink Simulation
+![](https://www.youtube.com/watch?v=sKsq9PEFTY0)
+
+## Robot
+
+<p align="center">
+	<img src="https://github.com/vinits5/biped/blob/master/robot/img1.jpg">
+</p>
+
+![](https://www.youtube.com/watch?v=fwqqGcni5fw)
