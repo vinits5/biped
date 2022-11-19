@@ -1,0 +1,89 @@
+#include <Servo.h> 
+ 
+Servo LAR;  
+Servo RAR;
+Servo LAP;
+Servo RAP;
+Servo LKP;
+Servo RKP;
+Servo LHP;
+Servo RHP;
+
+int Rhip[]={95, 95.5111126056640, 97.0096189432334, 99.3933982822018, 102.500000000000, 106.117714323462, 110, 113.882285676538, 117.500000000000, 120.606601717798, 122.990381056767, 124.488887394336, 125};
+int Rknee[]={97, 97.9540768639061, 100.751288694036, 105.201010126777, 111, 117.753066737129, 125, 132.246933262871, 139, 144.798989873223, 149.248711305964, 152.045923136094, 153};
+int RankleP[]={92.5000000000000, 92.0570357417579, 90.7583302491977, 88.6923881554251, 86, 82.8646475863328, 79.5000000000000, 76.1353524136672, 73, 70.3076118445749, 68.2416697508023, 66.9429642582421, 66.5000000000000};
+int Lhip[]={97, 96.4888873943360, 94.9903810567666, 92.6066017177982, 89.5000000000000, 85.8822856765378, 82, 78.1177143234622, 74.5000000000000, 71.3933982822018, 69.0096189432334, 67.5111126056640, 67};
+int Lknee[]={90, 89.0459231360939, 86.2487113059643, 81.7989898732233, 76, 69.2469332628706, 62, 54.7530667371294, 48, 42.2010101267767, 37.7512886940357, 34.9540768639061, 34};
+int LankleP[]={85, 85.4429642582421, 86.7416697508023, 88.8076118445749, 91.5000000000000, 94.6353524136672, 98, 101.364647586333, 104.500000000000, 107.192388155425, 109.258330249198, 110.557035741758, 111};
+
+void setup() {
+  // put your setup code here, to run once:
+  LAR.attach(3);  // attaches the servo on pin 9 to the servo object 
+  RAR.attach(4);
+  LAP.attach(5);
+  RAP.attach(6);
+  LKP.attach(7);
+  RKP.attach(9);
+  LHP.attach(10);
+  RHP.attach(11);
+
+  //first make biped at home position.
+  LAR.write(82.5);
+  RAR.write(90);
+  LAP.write(85);
+  RAP.write(92.5);
+  LKP.write(90);
+  RKP.write(97);
+  LHP.write(97);
+  RHP.write(95);
+
+  int i;
+  for (i=0; i<13; i=i+1){
+    LHP.write(Lhip[i]);
+    RHP.write(Rhip[i]);
+    LKP.write(Lknee[i]);
+    RKP.write(Rknee[i]);
+    LAP.write(LankleP[i]);
+    RAP.write(RankleP[i]);
+    delay(20);
+  }
+  
+  delay(5000);
+  
+  for (i=12; i>=0; i=i-1){
+    LHP.write(Lhip[i]);
+    RHP.write(Rhip[i]);
+    LKP.write(Lknee[i]);
+    RKP.write(Rknee[i]);
+    LAP.write(LankleP[i]);
+    RAP.write(RankleP[i]);
+    delay(20);
+  }
+  
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+//    int i;
+//  for (i=0; i<37; i=i+1){
+//    LHP.write(Lhip[i]);
+//    RHP.write(Rhip[i]);
+//    LKP.write(Lknee[i]);
+//    RKP.write(Rknee[i]);
+//    LAP.write(LankleP[i]);
+//    RAP.write(RankleP[i]);
+//    delay(80);
+//  }
+//  
+//  for (i=36; i>=0; i=i-1){
+//    LHP.write(Lhip[i]);
+//    RHP.write(Rhip[i]);
+//    LKP.write(Lknee[i]);
+//    RKP.write(Rknee[i]);
+//    LAP.write(LankleP[i]);
+//    RAP.write(RankleP[i]);
+//    delay(80);
+//  }
+
+}
